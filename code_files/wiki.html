@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>WIKI API :-)</title>
+</head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $.getJSON('http://en.wikipedia.org/w/api.php?action=parse&page=Queue&prop=text&format=json&callback=?', function(json) {
+    $('#stack').html(json.parse.text['*']);
+    $("#stack").find("a:not(.references a)").attr("href", function(){ return "http://www.wikipedia.org" + $(this).attr("href");});
+    $("#stack").find("a").attr("target", "_blank");
+  });
+</script>
+<body>
+<div id="stack">&nbsp;</div>
+</body>
+</html>

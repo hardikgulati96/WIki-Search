@@ -1,0 +1,19 @@
+json:
+https://en.wikipedia.org/w/api.php?action=opensearch&search=hardik&limit=1&namespace=0&format=json
+https://en.wikipedia.org/w/api.php?action=opensearch&search=hardik&limit=1&namespace=0&format=jsonfm
+https://en.wikipedia.org/w/api.php?action=query&prop=extracts&format=json&exintro=&titles=Stack Overflow
+
+checking json:
+http://www.jsonlint.com/
+
+see these:
+
+http://stackoverflow.com/questions/27457977/searching-wikipedia-using-api
+
+http://stackoverflow.com/questions/25891076/wikipedia-api-fulltext-search-to-return-articles-with-title-snippet-and-image
+
+http://www.androidhive.info/2012/01/android-json-parsing-tutorial/
+
+
+
+
